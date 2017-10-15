@@ -1,4 +1,4 @@
-/* Clock class with an hierarchy of constructors to avoid code duplication.
+/* Clock class using an hierarchy of constructors to avoid code duplicates.
 From within a constructor we use the this keyword to call another constructor 
 in the same class */
 
