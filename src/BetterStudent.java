@@ -2,7 +2,11 @@
 class BetterStudent has better encapsulation. It completely eliminates 
 accessors (getters and setters). Accessors are dangerous in the same way 
 public fields are: they provide external access to implementation details.
-Example: the getAm
+Suppose we had a getAm method which returns an int and at one point we change 
+it to return a long. A programmer who used our class has to change every line 
+of code where am was assigned to an integer value. Notice that instead of 
+getters we simply return a string represantation of our object via toString 
+method which overrides Object's method (more on that later...)
 */
 
 public class BetterStudent {
@@ -22,7 +26,6 @@ public class BetterStudent {
     }
 
 }
-
 
 class Tester {
     public static void main(String[] args) {
