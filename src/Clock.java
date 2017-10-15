@@ -29,6 +29,17 @@ public class Clock {
 
 class ClockTester {
     public static void main (String[] args) {
+        Clock clock1 = new Clock();
+        Clock clock2 = new Clock(23,59,59);
+        Clock clock3 = new Clock(23,59,60);
+        
+        
+        clock1.display_Clock();
+        clock2.display_Clock();
+        clock3.display_Clock();
+        
+        Clock clock4 = new Clock(23,59); //throws........    
+        clock4.display_Clock();
         
     }
 
