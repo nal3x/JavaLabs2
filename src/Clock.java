@@ -38,9 +38,6 @@ class ClockTester {
         clock2.display_Clock();
         clock3.display_Clock();
         
-        Clock clock4 = new Clock(23,59); //throws........    
-        clock4.display_Clock();
-        
     }
 
 }
